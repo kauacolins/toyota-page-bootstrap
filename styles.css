@@ -1,0 +1,195 @@
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-nav {
+    font-weight: 600;
+}
+
+.div-line {
+    display: flex;
+    justify-content: center;
+}
+
+.div-line .line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 3px;
+    background-color: rgb(214, 214, 214);
+    border-radius: 10px;
+}
+
+.navbar-brand img {
+    width: 80px;
+}
+
+
+.container-fluid {
+    padding-left: 4em;
+    padding-right: 15em;    
+}
+
+.container-fluid .navbar-nav {
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    cursor: pointer;
+    
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .text-button {
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.container .text-button h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.container .text-button span {
+    color: rgb(255, 52, 52);
+}
+
+.home-page .text-button .btn-outline-danger {
+    font-weight: 700;
+    width: 20em;
+}
+
+.home-page img {
+    position: absolute;
+    right: 0;
+    width: 45%;
+}
+
+.cars-models {
+    height: 40em;
+}
+
+.cars-models .container .text-center {
+    font-weight: 700;
+}
+
+.carousel-item img {
+    height: auto; 
+    margin: 0 auto; 
+    display: block; 
+}
+
+.carousel-caption {
+    margin-top: 10px;    
+    text-align: center;  
+    color: gray;
+
+}
+
+
+.carousel-item {
+    padding-bottom: 80px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); 
+}
+
+.table-models {
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 5em;
+    background-color: rgb(13, 13, 13);
+}
+
+.table-models .container img {
+    width: 7%;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    display: block; 
+
+}
+
+.icon-feedback {
+    width: 7%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.dropdown .btn {
+    width: 100%;
+}
+
+.contact {
+    margin-bottom: 5em;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container h1 {
+    font-weight: 700;
+    font-size: 3.3em;
+}
+
+.contact-container span {
+    color: rgb(255, 52, 52);
+}
+
+@media (max-width: 1200px) {
+    .container-fluid {
+        padding-left: 2em;
+        padding-right: 5em;
+    }
+}
+
+@media (max-width: 992px) {
+    .container-fluid {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .container .text-button h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-fluid {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .home-page img {
+        width: 80%;
+    }
+
+    .contact-container h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 576px) {
+    .container .text-button h1 {
+        font-size: 2em;
+    }
+
+    .home-page .text-button .btn-outline-danger {
+        width: 12em;
+    }
+
+    .contact-container h1 {
+        font-size: 1.8em;
+    }
+}

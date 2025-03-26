@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Projeto Programação Web Avançada</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img src="scr/images/logo-toyota-1.png" alt="Toyota">
+                </a>
+                <a class="navbar-nav">Home</a>
+                <a class="navbar-nav">Modelos</a>
+                <a class="navbar-nav">Tecnologia</a>
+                <a class="navbar-nav">Contato</a>
+            </div>
+        </nav>
+      
+    </header>
+    <main>
+        <section class="container home-page">
+            <div class="container text-button">
+                <h1>Inovação e Qualidade<br><span>Toyota</span></h1>
+                <button class="btn btn-outline-danger">Clique Aqui</button>
+            </div>
+            <img src="scr/images/bg-home-page.png" alt="Carro Toyota">
+
+            <div class="div-line">
+                <div class="line">
+            </div>
+
+        </section>
+
+        
+
+        <section class="cars-models">
+            <div class="container mt-5">
+                <h2 class="text-center mb-4">Modelos Toyota</h2>
+            
+                <div id="carrosselToyota" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carrosselToyota" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carrosselToyota" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carrosselToyota" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+            
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="scr/images/cars/corolla-2024.png" class="d-block w-50" alt="Toyota Corolla">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Corolla 2024</h5>
+                                <p>Conforto e tecnologia para o seu dia a dia.</p>
+                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#corollaModal">Ver Mais</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="scr/images/cars/hilux-2024.png" class="d-block w-50" alt="Toyota Hilux">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Hilux 2024</h5>
+                                <p>Robustez e potência para qualquer terreno.</p>
+                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#hiluxModal">Ver Mais</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="scr/images/cars/rav4-2024.png" class="d-block w-50" alt="Toyota RAV4">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>RAV4 Híbrido</h5>
+                                <p>Eficiência e sustentabilidade no SUV perfeito.</p>
+                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#rav4Modal">Ver Mais</button>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carrosselToyota" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carrosselToyota" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="table-models">
+            <div class="container mt-5">
+                <img src="/scr/images/cars/logo-toyota-branco.png" alt="">
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Modelo</th>
+                            <th>Ano</th>
+                            <th>Preço</th>
+                            <th>Consumo (km/l)</th>
+                            <th>Combustível</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Corolla</td>
+                            <td>2024</td>
+                            <td>R$ 150.000</td>
+                            <td>12 km/l</td>
+                            <td>Gasolina</td>
+                        </tr>
+                        <tr>
+                            <td>Hilux</td>
+                            <td>2024</td>
+                            <td>R$ 250.000</td>
+                            <td>10 km/l</td>
+                            <td>Diesel</td>
+                        </tr>
+                        <tr>
+                            <td>Yaris</td>
+                            <td>2024</td>
+                            <td>R$ 110.000</td>
+                            <td>14 km/l</td>
+                            <td>Flex</td>
+                        </tr>
+                        <tr>
+                            <td>RAV4</td>
+                            <td>2024</td>
+                            <td>R$ 280.000</td>
+                            <td>15 km/l</td>
+                            <td>Híbrido</td>
+                        </tr>
+                        <tr>
+                            <td>SW4</td>
+                            <td>2024</td>
+                            <td>R$ 330.000</td>
+                            <td>9 km/l</td>
+                            <td>Diesel</td>
+                        </tr>
+                        <tr>
+                            <td>Prius</td>
+                            <td>2024</td>
+                            <td>R$ 180.000</td>
+                            <td>20 km/l</td>
+                            <td>Híbrido</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="testimonials bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">O que nossos clientes dizem</h2>
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card text-center p-4">
+                                <img src="/scr/images/feedback.png" class="icon icon-feedback" alt="">
+                                <p class="mb-3">"Adorei meu Corolla, super confortável e econômico!"</p>
+                                <h5>- João Silva</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card text-center p-4">
+                                <img src="/scr/images/feedback.png" class="icon icon-feedback" alt="">
+                                <p class="mb-3">"A Hilux é perfeita para viagens longas, muito robusta!"</p>
+                                <h5>- Maria Fernandes</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card text-center p-4">
+                                <img src="/scr/images/feedback.png" class="icon icon-feedback" alt="">
+                                <p class="mb-3">"O RAV4 híbrido é incrível, potência e sustentabilidade!"</p>
+                                <h5>- Pedro Oliveira</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+                
+            </div>
+        </section>
+        
+
+        <section class="contact">
+
+            <div class="container mt-5">
+
+                <div class="row">
+        
+                    <div class="contact-container col">
+                        <h1 class="text-end">Fique por dentro <br>das <span>novidades</span> <br> da Toyota!</h1>
+                    </div>
+        
+                    <div class="col">
+                        <form>
+                            <h5>Informações de contato:</h5>
+                            <div class="form-group">
+                                <label for="">Nome:</label>
+                                <input type="text" class="form-control" placeholder="Digite seu nome">
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email:</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Insira seu Email">
+                            </div>
+                            
+                            <div class="row">
+                                <div class="form-group col">
+                                    <label for="">Telefone:</label>
+                                    <input type="number" class="form-control" placeholder="Digite seu telefone">
+                                </div>
+        
+                                <div class="form-group col">
+                                    <label>Escolha um modelo</label>
+                                    <div class="dropdown">
+                                        <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Toyota
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <li><a class="dropdown-item" href="#">Corolla</a></li>
+                                            <li><a class="dropdown-item" href="#">Hilux</a></li>
+                                            <li><a class="dropdown-item" href="#">Yaris</a></li>
+                                            <li><a class="dropdown-item" href="#">RAV4</a></li>
+                                            <li><a class="dropdown-item" href="#">SW4</a></li>
+                                            <li><a class="dropdown-item" href="#">Prius</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                            <div class="row">
+                                <div class="form-group col">
+                                    <h5>Preferência de contato:</h5>
+                                    <label class="form-label">
+                                        <input type="checkbox" name="" value="whatsapp"> Whatsapp
+                                    </label>
+                                    <br>
+                                    <label class="form-label">
+                                        <input type="checkbox" name="" value="email"> Email
+                                    </label>
+                                    <br>
+                                    <label class="form-label">
+                                        <input type="checkbox" name="" value="sms"> SMS
+                                    </label>
+                                    <br>
+                                </div>
+                                <div class="form-group col">
+                                    <h5>Tipo de cliente:</h5>
+                                    <label class="form-label">
+                                        <input type="radio" name="color" value="jurifica"> Pessoa Jurídica 
+                                    </label>
+                                    <br>
+                                    <label class="form-label">
+                                        <input type="radio" name="color" value="fisica"> Pessoa Física 
+                                    </label>
+                                </div>
+                            </div>
+                            <input id="alertButton" class="btn btn-danger" type="submit" value="Enviar"></input>
+
+                            <div id="alertBox" class="alert alert-info mt-3" role="alert" style="display:none;">
+                                Enviado com sucesso!
+                            </div>
+                        </form>
+                </div>
+            </div>
+
+            <div class="modal fade" id="corollaModal" tabindex="-1"  role="dialog" aria-labelledby="corollaModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="corollaModalLabel">Toyota Corolla 2024</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="scr/images/cars/corolla-2024.png" class="d-block w-100" alt="Toyota Corolla">
+                            <p class="mt-3">O Toyota Corolla 2024 traz design elegante, desempenho confiável e tecnologia avançada. É o carro perfeito para quem busca conforto e eficiência no dia a dia.</p>
+                            <ul>
+                                <li><strong>Motor:</strong> 2.0L 16V</li>
+                                <li><strong>Potência:</strong> 177 hp</li>
+                                <li><strong>Consumo médio:</strong> 12 km/litro</li>
+                                <li><strong>Preço:</strong> A partir de R$ 129.990</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade" id="hiluxModal" tabindex="-1" role="dialog" aria-labelledby="hiluxModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="hiluxModalLabel">Toyota Hilux 2024</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="scr/images/cars/hilux-2024.png" class="d-block w-100" alt="Toyota Hilux">
+                            <p class="mt-3">A Hilux 2024 é sinônimo de robustez, potência e confiabilidade. Ideal para quem precisa de um veículo para encarar qualquer tipo de terreno com conforto e segurança.</p>
+                            <ul>
+                                <li><strong>Motor:</strong> 2.8L Diesel</li>
+                                <li><strong>Potência:</strong> 204 hp</li>
+                                <li><strong>Consumo médio:</strong> 9 km/litro</li>
+                                <li><strong>Preço:</strong> A partir de R$ 179.990</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade" id="rav4Modal" tabindex="-1" role="dialog" aria-labelledby="rav4ModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="rav4ModalLabel">Toyota RAV4 Híbrido</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="scr/images/cars/rav4-2024.png" class="d-block w-100" alt="Toyota RAV4">
+                            <p class="mt-3">O Toyota RAV4 Híbrido 2024 oferece uma experiência única de condução com um desempenho excepcional e eficiência de combustível, tudo em um SUV moderno e elegante.</p>
+                            <ul>
+                                <li><strong>Motor:</strong> 2.5L Híbrido</li>
+                                <li><strong>Potência:</strong> 219 hp</li>
+                                <li><strong>Consumo médio:</strong> 15 km/litro</li>
+                                <li><strong>Preço:</strong> A partir de R$ 179.990</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-5">
+        <p>&copy; 2025</p>
+    </footer>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
